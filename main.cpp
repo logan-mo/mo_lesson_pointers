@@ -1,21 +1,24 @@
 #include <iostream>
 using namespace std;
 
-void swap(int &a, int &b){
-    int temp = a;
+void swap(int* a, int* b){
+    int* temp = a;
     a = b;
     b = temp;
 }
 
 int main() {
 
-    int num[10] = {20,21,22,23,24,25,26,27,28,29};
-
 
     // Make a for loop that uses the pointer num and prints all numbers in the array
 
+    int a = 10, b = 20;
 
 
+    swap(a,b);
+
+    cout << "a = " << a << ", b = " << b << endl;
+    
     /*
 
     int a = 10;
